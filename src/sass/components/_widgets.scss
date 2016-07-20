@@ -1,0 +1,30 @@
+.checkBoxHolder {
+    display: inline-block;
+    margin-right: 90px;
+}
+
+.radioHolder {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.textAreaHolder {
+    height: 85px;
+    display: inline-block;
+
+    textarea {
+        margin-top: 5px;
+        resize: none;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.leftBtnGroup {
+    float: left;
+}
+
+.rightBtnGroup {
+    float: right;
+}

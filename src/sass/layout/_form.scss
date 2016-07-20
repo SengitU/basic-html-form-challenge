@@ -1,0 +1,67 @@
+.line-holder {
+    margin-top: 20px;
+    display: block;
+    position: relative;
+}
+.line-holder:before,
+.line-holder:after { content:""; display:table; }
+.line-holder:after { clear:both;}
+.line-holder { zoom:1; /* For IE 6/7 */ }
+
+#some-text-form {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Calibri, sans-serif;
+}
+
+.column {
+    display: block;
+    float: left;
+    margin: 1% 0 1% 2%;
+}
+.column:first-child { margin-left: 0; }
+
+.column-1-3 {
+    width: 32% !important;
+}
+.column-2-3 {
+    width: 66% !important;
+}
+.column-3-3 {
+    width: 100% !important;
+}
+
+input {
+    height: 20px;
+    border: 1px solid #CCC;
+    margin-top: 5px;
+    box-sizing : border-box;
+}
+input[type=text] {
+    width: 100%;
+}
+input[type=button] {
+    cursor: pointer;
+}
+textarea {
+    border: 1px solid #CCC;
+    box-sizing : border-box;
+}
+
+.twoInput {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        float: initial !important;
+        width: 100% !important;
+        margin: 5% 0% !important;
+    }
+    .line-holder {
+        margin-top: -5px !important;
+    }
+    .textAreaHolder {
+        margin-bottom: 35px !important;
+    }
+}
